@@ -54,15 +54,24 @@ x^2
 x^1/6
 x^-1
 
-
-
+#rnorm is used to create standard normal variables with a mean of 0 and a standard deviation of 1
 x=rnorm(50)
-y=x+rnorm(50,mean=50,sd=.1)
-cor(x,y)
+x
+#giving our own standard deviation and mean as parameter
+y=x+rnorm(50,mean=25,sd=.2)
+y
+
+#finding correlation between x and y
+cor(x,y) #highly correlated
+
+#seed is used when we want to use the same set of random numbers for our code to be able to be reproducible
 set.seed(1303)
 rnorm(50)
+
 set.seed(3)
 y=rnorm(100)
+y
+
 mean(y)
 var(y)
 sqrt(var(y))
