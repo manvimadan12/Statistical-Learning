@@ -36,12 +36,26 @@ ls() #checking is the list is emplty now
 
 #learn about a function by putting a question mark in front
 ?matrix
+
+#using the matrix function by passing paarmeters in different ways
 x=matrix(data=c(1,2,3,4), nrow=2, ncol=2)
 x
 x=matrix(c(1,2,3,4),2,2)
 matrix(c(1,2,3,4),2,2,byrow=TRUE)
+
+x
+#using the square root function on a matrix
 sqrt(x)
+
+#finding the square of a vector
 x^2
+
+#any power is possible including exponential or negative
+x^1/6
+x^-1
+
+
+
 x=rnorm(50)
 y=x+rnorm(50,mean=50,sd=.1)
 cor(x,y)
